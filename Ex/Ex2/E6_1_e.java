@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class E6_1_e {
     public static void main(String[] args) {
+        System.out.println("E6.1 e");
         System.out.println("Please enter a number: ");
         Scanner scanner = new Scanner(System.in);
         int num = scanner.nextInt();
