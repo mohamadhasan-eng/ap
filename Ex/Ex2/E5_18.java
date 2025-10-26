@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class E5_18 {
     public static void main(String[] args) {
+        System.out.println("E5.18");
         System.out.println("Please enter three str:");
         Scanner scanner = new Scanner(System.in);
         String str1 = scanner.next();
