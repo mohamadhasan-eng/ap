@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class E5_15 {
     public static void main(String[] args) {
+        System.out.println("Ex5.15");
         System.out.println("Please enter your income: ");
         Scanner scanner = new Scanner(System.in);
         double income = scanner.nextDouble();
