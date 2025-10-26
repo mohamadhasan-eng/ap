@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class E6_2 {
     public static void main(String[] args) {
+        System.out.println();
         System.out.println("Please enter the length of the sequence(k): ");
         Scanner scanner = new Scanner(System.in);
         int k = scanner.nextInt();
