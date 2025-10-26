@@ -2,6 +2,7 @@ package Ex.Ex2;
 
 public class E6_16 {
     public static void main(String[] args) {
+        System.out.println();
         System.out.println("Multiplication table:");
         int[][] multiTable = new int[10][10];
 
