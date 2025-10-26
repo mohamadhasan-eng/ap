@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class E6_17 {
     public static void main(String[] args) {
-
+        System.out.println();
         System.out.println("Please entter a number(k): ");
         Scanner scanner = new Scanner(System.in);
         int k = scanner.nextInt();
