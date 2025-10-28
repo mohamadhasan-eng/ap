@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class E5_2 {
     public static void main(String[] args) {
-        System.out.println("Ex5.2");
+        System.out.println();
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
