@@ -36,42 +36,21 @@ public class sudoku {
             int c = scanner1.nextInt();
             System.out.println("value interval(0...9):");
             int v = scanner1.nextInt();
-            if (r < 0 && r > 9 && c < 0 && c > 9 && v < 0 && v > 9) {
-                System.out.println("Please enter row , col and value(r , c , v):");
-                System.out.println("row interval(0...9):");
-                r = scanner1.nextInt();
-                System.out.println("col interval(0...9):");
-                c = scanner1.nextInt();
-                System.out.println("value interval(0...9):");
-                v = scanner1.nextInt();
-            } else {
+            if (sudoku[r][c] == 0) {
                 if (sudokuValidate(sudoku, r, c, v)) {
                     sudoku[r][c] = v;
+                    printSudoku(sudoku);
                     System.out.println("You want play (yes = 1 and no = 0):");
-                    int res = scanner.nextInt();
+                    int res = scanner1.nextInt();
                     if (res == 0) {
                         break;
-                    } else {
-                        System.out.println("Please enter row , col and value(r , c , v):");
-                        System.out.println("row interval(0...9):");
-                        r = scanner1.nextInt();
-                        System.out.println("col interval(0...9):");
-                        c = scanner1.nextInt();
-                        System.out.println("value interval(0...9):");
-                        v = scanner1.nextInt();
                     }
-                } else {
-                    System.out.println("Please enter row , col and value(r , c , v):");
-                    System.out.println("row interval(0...9):");
-                    r = scanner1.nextInt();
-                    System.out.println("col interval(0...9):");
-                    c = scanner1.nextInt();
-                    System.out.println("value interval(0...9):");
-                    v = scanner1.nextInt();
                 }
+            }else {
+                System.out.println("There is a number in this location. Please choose another location:");
             }
-            printSudoku(sudoku);
         }
+        printSudoku(sudoku);
     }
 
     static void printSudoku(int[][] sudoku) {
