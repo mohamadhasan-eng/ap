@@ -33,7 +33,7 @@ public class E3_3 {
         int row = 0;
         for (int i = 0; i < r; i++) {
             int sum = 0;
-            for (int j = 0; j < r; j++) {
+            for (int j = 0; j < c; j++) {
                 sum += matrix[i][j];
             }
             if (sum > s) {
