@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class E3_4 {
     public static void main(String[] args) {
-        System.out.println("Calculate the row with the largest sum of elements: ");
         System.out.println("Please Enter the row(r): ");
         Scanner scanner = new Scanner(System.in);
         int r = scanner.nextInt();
